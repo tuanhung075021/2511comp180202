@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="bai1.css" />
   </head>
   <body>
-    <form name="dangnhap" action="xulydangnhap.php" method="post">
-      <div>Hình ảnh: <input type="file" name="hinh" /></div>
+    <form name="dangnhap" action="https://www.google.com.vn" method="post">
+      <label for="hoten">Họ và tên</label>
+      <input type="text" name="hoten" id="hoten" /><br />
+      <label>Giới tính</label>
+      <input type="radio" id="gioitinhnam" name="Giới tính" value="Nam" />
+      <label for="gioitinhnam">Nam</label>
+      <input type="radio" id="gioitinhnu" name="Giới tính" value="Nữ" />
+      <label for="gioitinhnu">Nữ</label><br />
+      <label>Sở thích</label>
+      <input type="checkbox" id="sothich1" name="sothich" />
+      <label for="sothich1">Thiết kế Web</label>
+      <input type="checkbox" id="sothich2" name="sothich" />
+      <label for="sothich2">Giải thuật tự hành</label>
+      <input type="checkbox" id="sothich3" name="sothich" />
+      <label for="sothich3">Robotics</label><br />
+      <label for="noisinh">Nơi sinh</label>
+      <select id="noisinh" name="noisinh">
+        <option value="" disabled selected hidden>Tỉnh Thành</option>
+        <option value="TP.HCM">TP.HCM</option>
+        <option value="Thanh Hoá">Thanh Hoá</option></select
+      ><br />
+      <label for="hinh">Chân dung cá nhân</label>
+      <input type="file" id="hinh" name="chandung" accept="image/*" /><br />
+      <label for="thongtinthem">Thông tin thêm</label><br />
+      <textarea
+        name="ghichu"
+        rows="5"
+        cols="30"
+        placeholder="Nhập ghi chú của bạn"
+      ></textarea
+      ><br />
+      <button type="submit">Nộp thông tin</button>
+      <button type="reset">Tái thiết lập thông tin</button>
     </form>
   </body>
 </html>
