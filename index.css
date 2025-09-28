@@ -57,14 +57,14 @@ body {
     width: auto;
     top: 1vh;
   }
-  p {
-    padding-top: 0px !important;
+  .pg {
+    padding-top: 150px !important;
   }
 }
 .pg {
-  padding-top: 35vh;
+  padding-top: 40vh;
   text-align: center;
-  font-size: 10vh;
+  font-size: 10vw;
 }
 .about {
   width: 100%;
