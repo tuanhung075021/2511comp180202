@@ -49,10 +49,10 @@ body {
 }
 @media (max-width: 450px) {
   .logo {
-    position: sticky;
+    position: relative;
     display: block;
     margin: 0 auto;
-    height: 30vh;
+    height: 20vh;
     width: auto;
     top: 1vh;
   }
