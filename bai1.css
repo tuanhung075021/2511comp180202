@@ -4,5 +4,6 @@ div {
 body {
   background-color: azure;
 }
-label {
+form {
+  text-align: center;
 }
