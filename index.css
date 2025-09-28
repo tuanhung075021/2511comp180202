@@ -3,7 +3,8 @@ body {
   color: white;
   background-color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 2vh, 2vw;
+  font-size: clamp(5px, 1.5vw, 20px);
+  padding: 0px;
 }
 
 .home {
@@ -41,15 +42,32 @@ body {
   color: grey;
   font-weight: bold;
 }
-@media (max-width: 610px) {
+@media (max-width: 450px) {
   .menu {
     display: none;
   }
 }
-@media (max-width: 610px) {
+@media (max-width: 450px) {
   .logo {
-    position: sticky;
+    position: relative;
     display: block;
     margin: 0 auto;
+    height: 30vh;
+    width: auto;
+    top: 1vh;
   }
+  p {
+    padding-top: 0px !important;
+  }
+}
+.blur {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+p {
+  padding-top: 150px;
 }
