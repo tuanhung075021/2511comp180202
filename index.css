@@ -24,7 +24,7 @@ body {
 }
 .menu {
   position: fixed;
-  top: 8.6vh;
+  top: 8.8vh;
   right: 7vw;
   text-align: right;
   display: flex;
@@ -40,4 +40,16 @@ body {
 .menu a:hover {
   color: grey;
   font-weight: bold;
+}
+@media (max-width: 610px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 610px) {
+  .logo {
+    position: sticky;
+    display: block;
+    margin: 0 auto;
+  }
 }
