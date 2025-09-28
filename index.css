@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   color: white;
-  background-color: black;
+  background-color: #19237e;
   font-family: "Poppins", sans-serif;
   font-size: clamp(5px, 1.5vw, 20px);
   padding: 0px;
@@ -10,9 +10,9 @@ body {
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url("ZEN_WEBSITE_img/bgr.png");
+  background-image: linear-gradient(#19237e, #a81e33);
   background-size: cover;
-  background-position: center;
+  background-position: absolute;
   background-repeat: no-repeat;
 }
 .logo {
@@ -25,11 +25,12 @@ body {
 }
 .menu {
   position: fixed;
-  top: 8.8vh;
+  top: 8.2vh;
   right: 7vw;
   text-align: right;
   display: flex;
   gap: 8.5vw;
+  z-index: 1000;
 }
 .menu a:link {
   color: white;
@@ -60,14 +61,15 @@ body {
     padding-top: 0px !important;
   }
 }
-.blur {
-  position: absolute;
-  top: 0;
-  height: auto;
+.pg {
+  padding-top: 35vh;
+  text-align: center;
+  font-size: 10vh;
+}
+.about {
   width: 100%;
-  backdrop-filter: blur(10px);
-  z-index: 999;
-}
-p {
-  padding-top: 150px;
-}
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#09033d, #000000);
