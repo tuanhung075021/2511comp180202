@@ -18,7 +18,7 @@ body {
 }
 .logo {
   position: fixed;
-  top: 2vh;
+  top: 1vh;
   left: 1vw;
   height: 16vh;
   width: auto;
@@ -56,12 +56,18 @@ body {
 }
 @media (max-width: 450px) {
   .menu {
-    display: none;
+    position: fixed;
+    top: 3vh;
+    left: 18%;
+    display: flex;
+    gap: 8.5vw;
+    z-index: 1000;
+    font-size: 2.5vw;
   }
 }
 @media (max-width: 450px) {
   .logo {
-    position: relative;
+    position: sticky;
     display: block;
     margin: 0 auto;
     height: 16vh;
@@ -69,12 +75,12 @@ body {
     top: 1vh;
   }
   .pg {
-    padding-top: 150px !important;
+    padding-top: 310px !important;
   }
 }
 .pg {
   font-family: "Telegraf";
-  padding-top: 280px;
+  padding-top: 45vh;
   text-align: center;
   font-size: 10vw;
   font-weight: bold;
@@ -100,14 +106,14 @@ body {
   position: absolute;
   bottom: 3vh;
   left: 3vw;
-  font-size: clamp(2px, 2vw, 22px);
+  font-size: clamp(2px, 2vw, 19px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .info2 {
   position: absolute;
   bottom: 3vh;
   right: 3vw;
-  font-size: clamp(2px, 2vw, 22px);
+  font-size: clamp(2px, 2vw, 19px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .gach {
