@@ -81,21 +81,21 @@ body {
   }
   .info1 {
     position: absolute;
-    bottom: 6vh !important;
+    bottom: 10vh !important;
     left: 4.5vw !important;
     font-size: clamp(2px, 2vw, 19px);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .info2 {
     position: absolute;
-    bottom: 6vh !important;
+    bottom: 10vh !important;
     right: 4.5vw !important;
     font-size: clamp(2px, 2vw, 19px);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .gach {
     position: absolute;
-    bottom: 6.5vh !important;
+    bottom: 10.2vh !important;
     left: 46%;
     font-size: clamp(0px, 1.2vw, 10px);
     font-family: "Telegraf";
