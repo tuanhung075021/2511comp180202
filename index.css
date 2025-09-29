@@ -44,6 +44,10 @@ body {
   color: grey;
   font-weight: bold;
 }
+.menu a:active {
+  color: white;
+  text-decoration: none;
+}
 @font-face {
   font-family: "Telegraf";
   src: url(font/PPTelegraf-UltraBold.otf);
@@ -58,21 +62,19 @@ body {
   .menu {
     position: fixed;
     top: 3vh;
-    left: 18%;
+    left: 15%;
     display: flex;
     gap: 8.5vw;
     z-index: 1000;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
   }
-}
-@media (max-width: 450px) {
   .logo {
     position: sticky;
     display: block;
     margin: 0 auto;
     height: 16vh;
     width: auto;
-    top: 1vh;
+    top: 1.2vh;
   }
   .pg {
     padding-top: 310px !important;
