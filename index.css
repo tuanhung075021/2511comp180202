@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   color: white;
-  background-color: #19237e;
+  background-color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: clamp(5px, 1.5vw, 20px);
   padding: 0px;
@@ -15,6 +15,7 @@ body {
   background-size: cover;
   background-position: absolute;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .logo {
   position: fixed;
@@ -110,11 +111,15 @@ body {
   font-weight: bold;
 }
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden; /*này bị margin collapse nè ae*/
   background-image: linear-gradient(#a81e33, #09033d, #000000);
 }
 .blur {
@@ -151,4 +156,57 @@ body {
 p {
   margin: 0;
   padding: 0;
+}
+.info1 a:link {
+  color: white;
+  text-decoration: none;
+}
+.info1 a:visited {
+  color: white;
+}
+.info1 a:hover {
+  color: rgb(240, 252, 255);
+  font-weight: bold;
+}
+.info1 a:active {
+  color: white;
+  text-decoration: none;
+}
+.title {
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: left;
+}
+.khung1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0vh;
+  margin-top: 8vh;
+  margin-left: 10vw;
+  text-align: justify;
+  width: 50vw;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(175, 193, 238, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  padding: 50px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+.khung2 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.khung2 img {
+  width: 100%;
+  height: 100%;
+  margin: 28vh 10vw 50vh 10vw;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 10px;
 }
