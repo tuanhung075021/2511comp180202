@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   color: white;
-  background-color: #000000;
+  background-color: #19237e;
   font-family: "Poppins", sans-serif;
   font-size: clamp(5px, 1.5vw, 20px);
   padding: 0px;
@@ -189,7 +189,7 @@ p {
     135deg,
     rgba(0, 0, 0, 0.3),
     rgba(175, 193, 238, 0.1),
-    rgba(0, 0, 0, 0.1)
+    rgba(255, 255, 255, 0.1)
   );
   padding: 50px;
   border-radius: 10px;
@@ -200,13 +200,40 @@ p {
   height: 40vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 5vh;
 }
 .khung2 img {
-  width: 100%;
-  height: 100%;
-  margin: 28vh 10vw 50vh 10vw;
+  width: 30vw;
+  height: 38vh;
+  margin: 6vh 10vw 0vh 10vw;
   object-fit: cover;
   object-position: top center;
   border-radius: 10px;
+}
+.thongtin {
+  width: 27vw;
+  border: solid;
+  padding: 18px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1vw;
+}
+.ten {
+  font-size: 2.5vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.achievement {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /*này bị margin collapse nè ae*/
+  background-image: linear-gradient(#000000, #0c0649, #1d184a);
 }
