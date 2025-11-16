@@ -1,0 +1,299 @@
+/* *********************************************
+ * CSS CHO HỒ CÁ DÙNG ẢNH TỪ LOCAL
+ * (File: style.css)
+ *********************************************
+*/
+
+body {
+  margin: 0;
+  overflow: hidden; /* Không có scrollbar */
+  background-color: #000;
+}
+
+/* 1. KHUNG HỒ CÁ */
+.aquarium {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87ceeb, #1e90ff, #163777);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 2. ĐÁY HỒ (CÁT) */
+.sand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  background: linear-gradient(to bottom, #f0e68c, #c2c039, #898b09);
+  z-index: 10;
+}
+
+/* 3. RONG BIỂN & SAN HÔ (TỪ ẢNH) */
+.seaweed,
+.coral {
+  position: absolute;
+  z-index: 15;
+  height: auto; /* Quan trọng: để giữ tỷ lệ ảnh */
+  transform-origin: bottom center; /* Rung lắc từ gốc (dưới) */
+}
+
+/* Các lớp rong biển */
+.seaweed {
+  width: 8vw;
+}
+.sw-1 {
+  left: 10vw;
+  bottom: 10vh;
+  animation: sway 8s ease-in-out infinite alternate;
+}
+.sw-2 {
+  left: 30vw;
+  bottom: 8vh;
+  width: 10vw;
+  animation: sway 7s ease-in-out infinite alternate 1s;
+}
+.sw-3 {
+  left: 60vw;
+  bottom: 10vh;
+  width: 7vw;
+  animation: sway 9s ease-in-out infinite alternate 2s;
+}
+.sw-4 {
+  left: 85vw;
+  bottom: 9vh;
+  width: 9vw;
+  animation: sway 6s ease-in-out infinite alternate 0.5s;
+}
+
+/* Các lớp san hô */
+.coral {
+  width: 12vw;
+}
+.cr-1 {
+  left: 20vw;
+  bottom: 8vh;
+  animation: pulse-coral 4s ease-in-out infinite alternate;
+}
+.cr-2 {
+  left: 50vw;
+  bottom: 10vh;
+  width: 10vw;
+  animation: pulse-coral 5s ease-in-out infinite alternate 1.5s;
+}
+.cr-3 {
+  left: 75vw;
+  bottom: 7vh;
+  width: 13vw;
+  animation: pulse-coral 3s ease-in-out infinite alternate 0.7s;
+}
+
+/* 4. CÁC SINH VẬT BIỂN (TỪ ẢNH) */
+.fish,
+.seahorse,
+.jellyfish {
+  position: absolute;
+  height: auto;
+  transform-origin: center center;
+}
+
+.fish {
+  width: 9vw;
+  z-index: 20;
+}
+
+.fish-gold {
+  width: 10vw;
+  top: 20vh;
+  animation: swim-left-to-right 18s linear infinite;
+}
+.fish-orange {
+  width: 8vw;
+  top: 50vh;
+  animation: swim-right-to-left 22s linear infinite 3s;
+}
+.fish-pink {
+  width: 7vw;
+  top: 35vh;
+  animation: swim-left-to-right 15s linear infinite 7s;
+}
+.fish-blue {
+  width: 6vw;
+  top: 70vh;
+  animation: swim-right-to-left 19s linear infinite 1s;
+}
+.fish-gold-2 {
+  width: 9vw;
+  top: 10vh;
+  animation: swim-right-to-left 25s linear infinite 5s;
+}
+
+/* CÁ NGỰA */
+.seahorse {
+  width: 5vw;
+  left: 40vw;
+  bottom: 12vh;
+  z-index: 22;
+  animation: bob-seahorse 6s ease-in-out infinite alternate;
+}
+
+/* SỨA */
+.jellyfish {
+  width: 7vw;
+  z-index: 18;
+  animation: bob-up-down 8s ease-in-out infinite alternate;
+}
+.jf-1 {
+  top: 5vh;
+  left: 70vw;
+}
+.jf-2 {
+  top: 30vh;
+  left: 15vw;
+  animation-delay: 4s;
+}
+.jf-3 {
+  top: 60vh;
+  left: 90vw;
+  animation-delay: 2s;
+}
+
+/* BONG BÓNG KHÍ */
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  bottom: 15vh;
+  z-index: 12;
+  animation: bubble-rise 10s linear infinite;
+}
+.bubble-1 {
+  width: 1vw;
+  height: 1vw;
+  left: 10vw;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+.bubble-2 {
+  width: 1.5vw;
+  height: 1.5vw;
+  left: 30vw;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+.bubble-3 {
+  width: 0.8vw;
+  height: 0.8vw;
+  left: 55vw;
+  animation-duration: 7s;
+  animation-delay: 3s;
+}
+.bubble-4 {
+  width: 1.2vw;
+  height: 1.2vw;
+  left: 70vw;
+  animation-duration: 11s;
+  animation-delay: 2s;
+}
+.bubble-5 {
+  width: 1.8vw;
+  height: 1.8vw;
+  left: 90vw;
+  animation-duration: 13s;
+  animation-delay: 5s;
+}
+
+/* 5. CÁC ANIMATION */
+@keyframes swim-left-to-right {
+  0% {
+    transform: scaleX(1);
+    left: -10vw;
+  }
+  100% {
+    transform: scaleX(1);
+    left: 110vw;
+  }
+}
+
+@keyframes swim-right-to-left {
+  0% {
+    transform: scaleX(-1);
+    left: 110vw;
+  }
+  100% {
+    transform: scaleX(-1);
+    left: -10vw;
+  }
+}
+
+@keyframes bob-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bob-seahorse {
+  0% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-3vh) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(5deg);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes pulse-coral {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes bubble-rise {
+  0% {
+    bottom: 15vh;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(1vw);
+  }
+  50% {
+    transform: translateX(-1vw);
+  }
+  75% {
+    transform: translateX(0.5vw);
+  }
+  100% {
+    bottom: 110vh;
+    opacity: 0;
+    transform: translateX(0);
+  }
+}

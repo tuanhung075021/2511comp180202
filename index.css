@@ -254,10 +254,10 @@ ul {
 .list {
   display: none;
   position: absolute;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   padding: 1vh 2vh 1vh 0.5vh;
   border-radius: 10px;
-
+  backdrop-filter: blur(9px);
   top: 100%;
   right: 0;
   width: 150px;
@@ -269,4 +269,67 @@ ul {
 .list li {
   padding: 2px;
   text-align: right;
+}
+.act li {
+  list-style-type: disc;
+}
+.act {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.act p {
+  flex-shrink: 0;
+
+  text-align: right;
+}
+.act ul {
+  flex-grow: 1;
+  padding-left: 1vw;
+}
+
+.activities {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+  padding: 10vh 0;
+
+  overflow: hidden;
+}
+
+.tieude {
+  font-family: "Telegraf", sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  margin-bottom: 5vh;
+}
+
+.khungactivities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  height: 60%;
+}
+
+.activity-card {
+  flex-basis: 40%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(175, 193, 238, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+
+  flex-grow: 1;
+  box-sizing: border-box;
 }
