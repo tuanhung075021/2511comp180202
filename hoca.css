@@ -106,27 +106,27 @@ body {
 .fish-gold {
   width: 10vw;
   top: 20vh;
-  animation: swim-left-to-right 18s linear infinite;
+  animation: swim-left-to-right 18s linear infinite backwards;
 }
 .fish-orange {
   width: 8vw;
   top: 50vh;
-  animation: swim-right-to-left 22s linear infinite 3s;
+  animation: swim-right-to-left 22s linear infinite 3s backwards;
 }
 .fish-pink {
   width: 7vw;
   top: 35vh;
-  animation: swim-left-to-right 15s linear infinite 7s;
+  animation: swim-left-to-right 15s linear infinite 7s backwards;
 }
 .fish-blue {
   width: 6vw;
   top: 70vh;
-  animation: swim-right-to-left 19s linear infinite 1s;
+  animation: swim-right-to-left 19s linear infinite 1s backwards;
 }
 .fish-gold-2 {
   width: 9vw;
   top: 10vh;
-  animation: swim-right-to-left 25s linear infinite 5s;
+  animation: swim-right-to-left 25s linear infinite 5s backwards;
 }
 
 /* CÁ NGỰA */
