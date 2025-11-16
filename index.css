@@ -19,7 +19,7 @@ body {
 }
 .logo {
   position: fixed;
-  top: 1vh;
+  top: 0 vh;
   left: 1vw;
   height: 16vh;
   width: auto;
@@ -27,12 +27,14 @@ body {
 }
 .menu {
   position: fixed;
-  top: 8.2vh;
-  right: 7vw;
+  top: 4vh;
+  right: 3vw;
   text-align: right;
   display: flex;
-  gap: 8.5vw;
+  gap: 2vh;
   z-index: 1000;
+  align-items: flex-end;
+  flex-direction: column;
 }
 .menu a:link {
   color: white;
@@ -127,7 +129,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 13vh;
+  height: 15vh;
   backdrop-filter: blur(9px);
   z-index: 999;
 }
@@ -225,7 +227,7 @@ p {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
-.achievement {
+.activities {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -236,4 +238,35 @@ p {
   background-repeat: no-repeat;
   overflow: hidden; /*này bị margin collapse nè ae*/
   background-image: linear-gradient(#000000, #0c0649, #1d184a);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.class li {
+  list-style: none;
+}
+.cv > li {
+  position: relative;
+  display: inline-block;
+}
+.list {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1vh 2vh 1vh 0.5vh;
+  border-radius: 10px;
+
+  top: 100%;
+  right: 0;
+  width: 150px;
+  z-index: 1001;
+}
+.list.show {
+  display: block;
+}
+.list li {
+  padding: 2px;
+  text-align: right;
 }
